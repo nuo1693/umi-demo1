@@ -1,0 +1,20 @@
+{
+  "css.validate": false,
+  "eslint.enable": true,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "html.format.enable": false,
+  "html.validate.scripts": false,
+  "html.validate.styles": false,
+  "javascript.format.enable": false,
+  "javascript.validate.enable": false,
+  "json.format.enable": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "typescript.format.enable": false,
+  // "prettier.eslintIntegration": true,
+  // "prettier.stylelintIntegration": true,
+  // "prettier.tslintIntegration": true,
+  "prettier.disableLanguages": [],
+  "typescript.validate.enable": true
+}

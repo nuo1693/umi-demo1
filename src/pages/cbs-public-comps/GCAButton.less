@@ -1,0 +1,33 @@
+.GCAButton {
+  color: #1890ff;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  :focus {
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+  }
+
+  :hover {
+    color: #40a9ff;
+  }
+
+  :active {
+    color: #096dd9;
+  }
+
+  :active,
+  :hover {
+    text-decoration: none;
+    outline: 0;
+  }
+
+  [disabled] {
+    color: rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}

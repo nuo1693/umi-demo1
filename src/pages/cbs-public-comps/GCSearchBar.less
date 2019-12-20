@@ -1,0 +1,15 @@
+:global {
+  :local(.searchBar).ant-form-inline {
+    display: flex;
+    flex-wrap: wrap;
+    .ant-form-item:last-child {
+      display: flex;
+      flex: auto;
+      flex-direction: row-reverse;
+      margin-right: 0;
+      .ant-form-item-children > * {
+        margin-left: 5px;
+      }
+    }
+  }
+}

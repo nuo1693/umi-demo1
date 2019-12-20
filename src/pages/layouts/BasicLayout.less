@@ -1,0 +1,41 @@
+@import '~antd/es/style/themes/default.less';
+
+:global {
+  .goback {
+    float: right;
+    margin: 10px 24px 4px;
+    color: #999;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(0, 162, 255);
+    }
+  }
+
+  .ant-pro-page-header-wrap-children-content {
+    margin: 0 24px !important;
+  }
+
+  .ant-pro-basicLayout-content.ant-layout-content {
+    z-index: 1;
+    height: 0;
+    margin: 74px 10px 10px;
+    padding: 24px 24px 0;
+    overflow: auto;
+    background-color: white;
+
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+      padding: 4px 0;
+      font-size: 12px;
+    }
+
+    .ant-calendar-picker {
+      width: 390px;
+    }
+  }
+
+  .ant-pro-fixed-header {
+    z-index: 9 !important;
+  }
+}

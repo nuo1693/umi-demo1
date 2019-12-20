@@ -1,0 +1,91 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.maplable {
+  padding: 4px 6px;
+  color: #fff;
+  font-size: 12px;
+  font-family: simshei;
+  background: #ff541f;
+  border-radius: 3px !important;
+  cursor: pointer;
+}
+
+.amap-marker-label {
+  border: 0;
+  background-color: transparent;
+}
+
+/* :global {
+  .ant-calendar-picker {
+    width: 390px;
+  }
+} */
+
+/* .ant-table-tbody {
+  max-height: 500px !important;
+  overflow-y: scroll;
+} */
+
+/* .ant-table-tbody .ant-table-row>tr>td {
+  padding: 0;
+  background: #058;
+} */
+
+/* .ant-table-row.ant-table-row-level-0 td {
+  background: #058;
+  padding: ;
+} */
+
+/* .ant-table-header.ant-table-hide-scrollbar .ant-table-thead>tr>th,
+.ant-table-body .ant-table-tbody .ant-table-row.ant-table-row-level-0 .ant-table-tbody>tr>td {
+  padding: 0 4px;
+
+} */
+
+/* .ant-table-wrapper {
+  min-width: 960px;
+} */
+
+
+/* .ant-table-thead tr {
+  display: flex;
+}
+
+.ant-table-thead th {
+  flex: 1;
+}
+
+.ant-table-row {
+  display: flex;
+}
+
+.ant-table-row td {
+  flex: 1;
+  align-self: auto;
+  overflow: auto;
+  word-break: break-all;
+}
+
+.ant-table-row td::-webkit-scrollbar {
+  display: none;
+}
+
+.columns {
+  display: flex;
+  align-items: center;
+  width: 0;
+} */
+
+/* :global {
+  &.ant-divider-vertical {
+    margin: 0 20px;
+  }
+} */

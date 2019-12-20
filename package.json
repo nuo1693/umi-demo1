@@ -1,0 +1,75 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "test": "umi test",
+    "rsync:local": "rsync -e 'ssh -p 22' -av --delete dist/ root@120.79.50.233:/srv/cbs/cbs-client/",
+    "rsync": "rsync -av --delete dist/ root@172.17.202.122:/cbs/cbs-client/",
+    "rsync2": "rsync -e 'ssh -p 51022' -av --delete dist/ root@172.17.202.121:/cbs/cbs-client/",
+    "lint:js": "eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
+    "lint:style": "stylelint --fix \"src/**/*.less\" --syntax less",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "@ant-design/pro-layout": "^4.5.14",
+    "antd": "^3.21.4",
+    "classnames": "^2.2.6",
+    "coordtransform": "^2.1.2",
+    "crypto-js": "^3.1.9-1",
+    "dva": "^2.6.0-beta.6",
+    "echarts": "^4.2.1",
+    "lodash": "^4.17.11",
+    "lodash-decorators": "^6.0.1",
+    "md5": "^2.2.1",
+    "memoize-one": "^5.1.1",
+    "moment": "^2.24.0",
+    "omit.js": "^1.0.2",
+    "path-to-regexp": "^3.0.0",
+    "qs": "^6.7.0",
+    "react": "^16.9.0",
+    "react-container-query": "^0.11.0",
+    "react-document-title": "^2.0.3",
+    "react-dom": "^16.9.0",
+    "react-draggable": "^4.1.0",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.4"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.7",
+    "@types/crypto-js": "^3.1.43",
+    "@types/echarts": "^4.1.11",
+    "@types/history": "^4.7.3",
+    "@types/jest": "^24.0.17",
+    "@types/lodash": "^4.14.133",
+    "@types/md5": "^2.1.33",
+    "@types/memoize-one": "^4.1.1",
+    "@types/mockjs": "^1.0.2",
+    "@types/qs": "^6.5.3",
+    "@types/react": "^16.9.1",
+    "@types/react-document-title": "^2.0.3",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-test-renderer": "^16.9.0",
+    "@umijs/fabric": "^1.1.0",
+    "husky": "^3.0.3",
+    "jest": "^24.8.0",
+    "lint-staged": "^9.2.1",
+    "mockjs": "^1.0.1-beta3",
+    "react-test-renderer": "^16.9.0",
+    "umi": "^2.8.20",
+    "umi-plugin-react": "^1.9.19",
+    "umi-request": "^1.2.3",
+    "umi-types": "^0.3.17"
+  },
+  "lint-staged": {
+    "**/*.less": "yarn run lint:style",
+    "**/*.{js,jsx,ts,tsx}": "yarn run lint:js",
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

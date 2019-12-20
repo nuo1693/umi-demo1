@@ -1,0 +1,39 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  background: @layout-body-background;
+  background-image: url('https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg');
+  background-repeat: no-repeat;
+  background-position: center 110px;
+  background-size: 100%;
+}
+
+.content {
+  display: flex;
+  flex: 1 0;
+  flex-direction: column;
+  // min-height: 400px;
+  .top {
+    margin: 24px 0 48px 0;
+    text-align: center;
+  }
+  .btm {
+    flex: auto;
+  }
+}
+
+.logo {
+  height: 44px;
+}
+
+.title {
+  margin-left: 16px;
+  font-weight: bold;
+  font-size: 29px;
+  line-height: 44px;
+  vertical-align: middle;
+}

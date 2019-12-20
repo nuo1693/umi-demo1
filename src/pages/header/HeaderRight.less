@@ -1,0 +1,17 @@
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+
+.header_right {
+  display: flex;
+  flex: auto;
+}
+
+.left {
+  flex: auto;
+  padding: 20px 0;
+}
+
+.right {
+  > *:hover {
+    background-color: @pro-header-hover-bg;
+  }
+}

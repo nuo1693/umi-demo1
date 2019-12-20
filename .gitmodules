@@ -1,0 +1,3 @@
+[submodule "src/pages/cbs-public-comps"]
+	path = src/pages/cbs-public-comps
+	url = http://gpsgit.chaboshi.cn/WEB/cbs-public-comps.git
