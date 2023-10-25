@@ -16,7 +16,7 @@
     "antd": "^3.21.4",
     "classnames": "^2.2.6",
     "coordtransform": "^2.1.2",
-    "crypto-js": "^3.1.9-1",
+    "crypto-js": "^4.2.0",
     "dva": "^2.6.0-beta.6",
     "echarts": "^4.2.1",
     "lodash": "^4.17.11",
